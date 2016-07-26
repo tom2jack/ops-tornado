@@ -1,0 +1,12 @@
+---
+# this is for deplay MariaDB Galera Cluster
+
+- include: common_init.yml
+
+- include: install_galera_cluster.yml
+
+- include: secure_galera_cluster.yml
+
+- include: configure_galera_cluster.yml
+
+

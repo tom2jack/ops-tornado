@@ -1,0 +1,1 @@
+这个目录里面必须存放好MariaDB Galera Cluster 的安装包

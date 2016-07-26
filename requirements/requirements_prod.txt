@@ -1,0 +1,12 @@
+futures==3.0.5
+pika==0.9.14
+SQLAlchemy==1.0.12
+tornado==4.3
+ansible==1.9.4
+psycopg2==2.6.1
+netaddr==0.7.18
+MySQL-python==1.2.5
+jwt==0.3.2
+requests==2.10.0
+zerorpc==0.5.2
+pywinrm==0.2.0
