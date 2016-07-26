@@ -234,7 +234,7 @@ class Task(Ad_Hoc):
             encrypt_pass = sha512_crypt.encrypt(password)
             module_args = 'name=%s shell=/bin/bash password=%s generate_ssh_key=yes' % (username, encrypt_pass)
         else:
-            module_args = 'name=%s shell=/bin/bash' % username
+            module_args = 'name=%s shell=/bin/bash generate_ssh_key=yes' % username
         return_data = self.run(module_args, "user")
         return return_data
 

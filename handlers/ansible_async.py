@@ -28,7 +28,7 @@ logger = logging.getLogger('tornado.app')
 class MainHandler(RequestHandler):
     def get(self):
         if self.request.headers.get('auth'):
-            print self.request.headers.get('auth')
+            self.request.headers.get('auth')
         self.render("test_websocket.html")
 
 
@@ -350,7 +350,7 @@ class TaskAsyncHandler(RequestHandler):
         req_id = self.get_argument('id')
         if req_id:
             results = yield self.get_data(req_id)
-            print results
+            results
             self.write(json.dumps(results))
         else:
             self.write("id are required!")
